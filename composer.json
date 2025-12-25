@@ -1,0 +1,10 @@
+{
+    "name": "dilshan/lent-sports",
+    "description": "The simple web app for lenting the sports item in ATI.",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}
