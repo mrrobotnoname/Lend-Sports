@@ -1,5 +1,5 @@
 <?php
-namespace App\core;
+namespace App\Core;
 
 Class Core {
     protected $currentController = "HomeController";
@@ -10,14 +10,15 @@ Class Core {
         $url = $this->getUrl();
 
         if(isset($url[0])) {
-            $controllerFile = '../app/controller/' . ucwords($url[0]) . '.php';
+           $controllerName = ucwords($url[0]) . 'Controller'; 
+           $controllerFile = '../app/Controller/' . $controllerName . '.php';
             if(file_exists($controllerFile)) {
-                $this->currentController = ucwords($url[0]);
+                $this->currentController = $controllerName;
                 unset($url[0]);
             }
         }
 
-        $controllerNamespace = 'App\\controller\\' . $this->currentController;
+        $controllerNamespace = 'App\\Controller\\' . $this->currentController;
         if(class_exists($controllerNamespace)) {
             $this->currentController = new $controllerNamespace;
         }else{

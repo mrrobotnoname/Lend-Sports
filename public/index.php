@@ -1,9 +1,12 @@
 <?php
+session_start();
 require_once __DIR__ . '/../vendor/autoload.php';
 // Enable error reporting for development
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$init = new App\core\Core();
+
+$init = new App\Core\Core();
+
  ?>
