@@ -6,6 +6,6 @@
     <title>Lent-Sports</title>
 </head>
 <body>
-    <h2><center>wellcome to the lent-sports</center></h2>
+         
 </body>
 </html>
