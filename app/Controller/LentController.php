@@ -9,6 +9,7 @@ class LentController extends Controller {
     public function __construct() {
         $this->itemModel = $this->model('Item');
         $this->lentModel = $this->model('Lent');
+
     }
 
     public function index() {
@@ -20,7 +21,6 @@ class LentController extends Controller {
             $phone = trim($_POST['phoneNo']);
             $item_id = $_POST['item'];
             $quantity = $_POST['quantity'];
-
             $data = [$student_id,$student_name,$item_id,$quantity];
             
             if(isset($item_id) and $quantity > 0) {

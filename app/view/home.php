@@ -9,8 +9,8 @@
     <h3><center>Wellcome to the Lent-Sports!</center></h3>
     <br><br>
 
-    <a href="<?php echo URLROOT;?>/lent">Lent a Sport item</a><br><br>
-    <a href="<?php echo URLROOT;?>/edit-item">Edit Sport items</a><br>
+    <a href="<?php echo URLROOT;?>/lent">Lend a Sport item</a><br><br>
+    <a href="<?php echo URLROOT;?>/retrieve">Retrive The Spots Item</a><br>
 
 
     <table>
