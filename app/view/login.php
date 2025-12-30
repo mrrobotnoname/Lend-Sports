@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LentSports Login</title>
+    <link rel="stylesheet" href="<?php URLROOT; ?>/css/login.css">
 </head>
 <body>
-    <form action="" method="POST">
-        <table>
-            <tr>
-                <td>Username:</td>
-                <td><input type="text" name="username" id=""></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td><input type="text" name="password" id=""></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="login"></td>
-            </tr>
-        </table>
-    </form>
+    <div class="login-card">
+        <h2>Lend-Sports Login</h2>
+        <form action="" method="POST">
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username" required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" class="btn-login">Sign In to Dashboard</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
 </html>

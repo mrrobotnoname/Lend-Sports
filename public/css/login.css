@@ -1,0 +1,113 @@
+:root {
+    --primary: #4e73df;
+    --success: #1cc88a;
+    --dark: #2e3750;
+    --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-gradient);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: white;
+    padding: 50px;
+    /* Made it bigger */
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    /* Wider card */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+}
+
+.logo-placeholder {
+    font-size: 50px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+h2 {
+    color: var(--dark);
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #858796;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px 15px;
+    border: 2px solid #e3e6f0;
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 10px rgba(78, 115, 223, 0.15);
+}
+
+
+.footer-text {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #858796;
+}
+
+.footer-text a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-login {
+    width: 100%;
+    /* Increased height and padding */
+    padding: 18px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    /* Bigger, bolder text */
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(78, 115, 223, 0.3);
+    position: relative;
+    overflow: hidden;
+}

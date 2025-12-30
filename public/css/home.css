@@ -1,0 +1,136 @@
+:root {
+    --primary: #4e73df;
+    --success: #1cc88a;
+    --dark: #2e3750;
+    --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-gradient);
+    margin: 0;
+    padding: 40px 20px;
+    color: var(--dark);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--dark);
+}
+
+/* Navigation Links as Buttons */
+.nav-actions {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-lend {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-retrieve {
+    background: white;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Grid Layout */
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Individual Card Styling */
+.item-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.item-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.item-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--primary);
+}
+
+.item-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.item-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.item-qty {
+    font-size: 13px;
+    color: #858796;
+    background: #f8f9fc;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.stock-number {
+    color: var(--success);
+    font-weight: 700;
+}
+
+.out-of-stock {
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+.btn-logout {
+    background: #e74c3c;
+    color: white;
+    border: none;
+}
+
+.btn-logout:hover {
+    background: #c0392b;
+    color: white;
+}
